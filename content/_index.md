@@ -1,5 +1,5 @@
 +++
-description = "Bitwise Mage's corner: game development, web development, low-level and kernel code, tutorials and discussions. A hub for software development insights."
+description = "Bitwise Mage's tower: game development, web development, low-level and kernel code, tutorials and discussions. A hub for software development insights."
 og_type = "website"
 +++
 {{<rawhtml>}}
