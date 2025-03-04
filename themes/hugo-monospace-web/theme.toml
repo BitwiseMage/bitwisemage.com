@@ -17,4 +17,3 @@ features = ['some', 'awesome', 'features']
 [author]
   name = 'Bitwise Mage'
   homepage = 'https://bitwisemage.com/'
-

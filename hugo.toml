@@ -20,6 +20,16 @@ name = 'Tags'
 pageRef = '/tags'
 weight = 30
 
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/BitwiseMage"
+
+[[params.social]]
+name = "X"
+icon = "x"
+url = "https://x.com/BitwiseMage"
+
 [taxonomies]
   tag = 'tags'
 

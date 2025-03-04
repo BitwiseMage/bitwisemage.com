@@ -1,5 +1,12 @@
 {{ define "main" }}
-  <h1 class="page-title">{{ .Title }}</h1>
+  <h1 class="page-title">
+    {{ if and (hasPrefix .RelPermalink "/tags") (not ( eq .Title "Tags"))}}
+    Tag: {{ lower .Title }}
+    {{ else }}
+    {{ .Title }}
+    {{ end }}
+    
+  </h1>
   {{ .Content }}
   {{ partial "postslist.html" . }}
 {{ end }}

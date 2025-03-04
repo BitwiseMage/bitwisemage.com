@@ -1,2 +1,11 @@
 <hr class="post-divider" />
-<div style="margin-top: 0;">{{ site.Copyright }}</div>
+<div style="margin-top: 0; display: flex; justify-content: space-between;">
+    <div style="margin-top: 0;">{{ site.Copyright }}</div>
+    <div style="margin-top: 0; display: flex;">
+        {{- range $index, $key := .Site.Params.Social -}}
+        <a style="margin-top: 0; margin-left: 10px; display: flex; height: 100%;" target="_blank" href="{{ $key.url }}" rel="me" title="{{ $key.name }}">
+            {{ partial "svg" $key.icon }}
+        </a>
+        {{- end -}}
+    </div>
+</div>
