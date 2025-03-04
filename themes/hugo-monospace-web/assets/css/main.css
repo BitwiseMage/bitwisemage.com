@@ -54,10 +54,10 @@ table {
   --font-family: "JetBrains Mono", monospace;
   --line-height: 1.20rem;
   --border-thickness: 1px;
-  --text-color: #000;
-  --text-color-alt: #666;
-  --background-color: #fff;
-  --background-color-alt: #eee;
+  --text-color: #1D2021;
+  --text-color-alt: #928374;
+  --background-color: #fbf1c7;
+  --background-color-alt: #ebdbb2;
 
   --font-weight-normal: 500;
   --font-weight-medium: 600;
@@ -73,10 +73,10 @@ table {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-color: #fff;
-    --text-color-alt: #aaa;
-    --background-color: #000;
-    --background-color-alt: #111;
+    --text-color: #EBDBB2;
+    --text-color-alt: #928374;
+    --background-color: #1D2021;
+    --background-color-alt: #3c3836;
   }
 }
 
