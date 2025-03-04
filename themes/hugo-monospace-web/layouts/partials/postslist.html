@@ -1,0 +1,10 @@
+<ul class="list-posts">
+    {{ range .CurrentSection.Pages }}
+    <li style="margin-bottom: 5px" class="list-posts-item">
+        <a href="{{ .RelPermalink }}">{{ if hasPrefix .RelPermalink "/tags"}}{{ lower .LinkTitle }}{{ $tag := .LinkTitle }}{{ $count := len (where site.RegularPages "Params.tags" "intersect" (slice (lower $tag))) }}<span style="margin-left: 1em;" class="list-item-date">({{ $count }})</span>
+            {{ else }}{{ .LinkTitle }}{{ $dateMachine := .Date | time.Format "2006/01/02" }}{{ $dateHuman := .Date | time.Format ":date_long" }}<br class="list-item-break"/><time class="list-item-date" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+            {{ end }}
+        </a>
+    </li>
+    {{ end }}
+</ul>
