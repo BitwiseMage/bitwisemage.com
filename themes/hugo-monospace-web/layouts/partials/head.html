@@ -1,5 +1,30 @@
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="{{ site.Params.TwitterUsername }}" />
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+{{ if (.IsHome)}}
+<meta name="description" content="{{ .Params.Description }}" />
+<meta name="og:title" content="{{ site.Title }}" />
+ <meta property="og:type" content="website" />
+ <meta property="og:description" content="{{ .Params.Description }}" />
+ <meta property="og:url" content="{{ site.BaseURL }}" />
+ <meta name="og:image" content="{{ printf `%s%s` .Permalink site.Params.TwitterImage }}" />
+ <meta name="twitter:creator" content="{{ site.Params.TwitterUsername }}" />
+ <meta name="twitter:title" content="{{ site.Title}}" />
+ <meta name="twitter:image" content="{{ printf `%s%s` .Permalink site.Params.TwitterImage }}" />
+{{ else }}
+<meta name="og:title" content="{{ printf `%s | %s` .Title site.Title }}" />
+{{- if and (hasPrefix .RelPermalink "/posts") (not ( eq .Title "Posts")) }}
+   <meta property="og:type" content="article" />
+ {{- else -}}
+   <meta property="og:type" content="website" />
+ {{- end -}}
+ <meta property="og:url" content="{{ .Permalink }}" />
+   <meta name="og:image" content="{{ printf `%s%s` site.BaseURL site.Params.TwitterImage }}" />
+   <meta name="twitter:image" content="{{ printf `%s%s` site.BaseURL site.Params.TwitterImage }}" />
+   <meta name="twitter:creator" content="{{ site.Params.TwitterUsername }}" />
+ <meta name="twitter:title" content="{{ printf `%s | %s` .Title site.Title }}" />
+{{ end }}
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
