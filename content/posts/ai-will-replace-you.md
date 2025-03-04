@@ -2,7 +2,7 @@
 title = 'Artificial intelligence will replace you as a software engineer'
 date = '2025-03-03'
 tags = ['ai']
-draft = true
+draft = false
 +++
 ## The Status Quo.
 Let's face it: AI is better than us. Our first language is JavaScript: the concept of `int`, `double`, `float` reduced to `number`; initializing a variable with a `string` and then reassigning it to a `number` is expected; and why do we even need multithreading if users can just buy newer hardware?
@@ -26,3 +26,10 @@ Repetitive tasks, which we could finish with our eyes closed and proper touch ty
 We don't use AI to solve problems for us. We use it to write our own solutions faster, while knowing precisely what and how it's needed. The best way to look at LLMs is as if they were software engineer interns. We point them in the right direction, wait for their solution, review it to make sure they're not doing anything catastrophic, and then adjust as needed until it's acceptable enough to integrate into the codebase.
 
 That is the proper way to use LLMs.
+
+## Why You're Getting Replaced.
+In case you haven't figured it out from my subtle foreshadowing, proper software engineers, which are the minority, are not getting replaced.
+
+So who's getting replaced? The "status quo software engineers". These are the people who build entire projects through LLMs without a single critical thought. They act as little more than ctrl-c, ctrl-v robots for LLMs, stitching together code from different prompts. And if LLMs have already advanced this much, it’s only a matter of time before they no longer need these robots.
+
+That said, not all hope is lost if you're a "status quo software engineer". As long as you adopt the right mindset, you can rest assured that you won’t be out of a job anytime soon.
