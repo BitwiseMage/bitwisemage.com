@@ -26,5 +26,6 @@
    <meta name="twitter:creator" content="{{ site.Params.TwitterUsername }}" />
  <meta name="twitter:title" content="{{ printf `%s | %s` .Title site.Title }}" />
 {{ end }}
+{{ template "_internal/google_analytics.html" . }}
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
