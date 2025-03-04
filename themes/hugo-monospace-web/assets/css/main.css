@@ -533,6 +533,10 @@ label input {
 }
 
 .header-nav-ul li {
+  margin-left: 10px;
+}
+
+.header-nav-ul li {
 	display: inline;
 }
 
@@ -582,5 +586,10 @@ label input {
 
   .header-div {
     display: block;
+  }
+
+  .header-nav-ul li {
+    margin-left: 0px;
+    margin-right: 10px;
   }
 }
