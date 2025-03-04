@@ -38,6 +38,15 @@ TwitterImage = "bitwisemage.png"
 [taxonomies]
   tag = 'tags'
 
+[services]
+  [services.googleAnalytics]
+    id = 'G-P25726Q4PG'
+
+[privacy]
+  [privacy.googleAnalytics]
+    disable = false
+    respectDoNotTrack = true
+
 [module]
   [module.hugoVersion]
     extended = false
