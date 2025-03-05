@@ -593,3 +593,54 @@ label input {
     margin-right: 10px;
   }
 }
+
+#cookie-form {
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 20px;
+  left: 0;
+  padding: 0 2ch;
+}
+
+#cookie-form .cookie-div {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  max-width: calc(min(76ch, round(down, 100%, 1ch)));
+  justify-content: space-between;
+}
+
+#cookie-form .cookie-div .cookie-buttons {
+  margin-top: 0;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#cookie-form .cookie-div .cookie-buttons :first-child {
+  margin-right: 5px;
+}
+
+#cookie-form .cookie-div {
+  border: var(--border-thickness) solid var(--text-color);
+  padding: 10px;
+  background-color: var(--background-color);
+}
+
+.accept-button {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+@media screen and (max-width: 480px) {
+  #cookie-form {
+    padding: 0 1ch;
+  }
+}
+
+@media screen and (max-width: 555px) {
+
+}
