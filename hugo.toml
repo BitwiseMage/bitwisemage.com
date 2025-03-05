@@ -47,6 +47,21 @@ TwitterImage = "bitwisemage.png"
     disable = false
     respectDoNotTrack = true
 
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = false
+    noClasses = false
+    tabWidth = 4
+    wrapperClass = 'highlight'
+
 [module]
   [module.hugoVersion]
     extended = false
