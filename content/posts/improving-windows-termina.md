@@ -27,7 +27,7 @@ Go to __Windows Terminal Settings__, then scroll down in the left sidebar until 
 
 By default, this field contains the directory path to the __pwsh.exe__ executable. To disable the version greeting, append `-NoLogo` to the end of the command. If the directory path is enclosed in double quotes, add the parameter after them. It should look like this:
 
-```
+```plaintext
 "Path\To\pwsh.exe" -NoLogo
 ```
 
