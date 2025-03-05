@@ -132,6 +132,7 @@ h1 {
 }
 h2 {
   font-size: 1.5rem;
+  line-height: calc(1.5 * var(--line-height));
 }
 
 hr {
@@ -639,8 +640,4 @@ label input {
   #cookie-form {
     padding: 0 1ch;
   }
-}
-
-@media screen and (max-width: 555px) {
-
 }
